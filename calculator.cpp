@@ -80,10 +80,8 @@ double calculate_time(double angle_deg, double initial_velocity) {
  * @brief Выводит справочную информацию о программе на русском языке
  */
 void print_help() {
-    cout << "===============================================================\n";
     cout << "           ГЕОМЕТРИЧЕСКИЙ КАЛЬКУЛЯТОР (Вариант 15)\n";
     cout << "    Вычисление параметров движения тела под углом к горизонту\n";
-    cout << "===============================================================\n\n";
     
     cout << "НАЗНАЧЕНИЕ:\n";
     cout << "  Программа рассчитывает параметры движения тела,\n";
@@ -255,7 +253,6 @@ int main(int argc, char* argv[]) {
         // Вычисление высоты подъема
         double result = calculate_height(angle, velocity);
         cout << "РЕЗУЛЬТАТ ВЫЧИСЛЕНИЙ:\n";
-        cout << "=====================\n";
         cout << "Операция:    " << russian_operation << "\n";
         cout << "Угол броска: " << angle << "°\n";
         cout << "Скорость:    " << velocity << " м/с\n";
@@ -265,7 +262,6 @@ int main(int argc, char* argv[]) {
         // Вычисление дальности полета
         double result = calculate_range(angle, velocity);
         cout << "РЕЗУЛЬТАТ ВЫЧИСЛЕНИЙ:\n";
-        cout << "=====================\n";
         cout << "Операция:    " << russian_operation << "\n";
         cout << "Угол броска: " << angle << "°\n";
         cout << "Скорость:    " << velocity << " м/с\n";
@@ -275,7 +271,6 @@ int main(int argc, char* argv[]) {
         // Вычисление времени полета
         double result = calculate_time(angle, velocity);
         cout << "РЕЗУЛЬТАТ ВЫЧИСЛЕНИЙ:\n";
-        cout << "=====================\n";
         cout << "Операция:    " << russian_operation << "\n";
         cout << "Угол броска: " << angle << "°\n";
         cout << "Скорость:    " << velocity << " м/с\n";
